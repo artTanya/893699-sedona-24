@@ -18,7 +18,57 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
+      <section class="options">
+        <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="pool" name="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="parking" name="parking">
+                <label for="parking">Паркинг</label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi" name="wifi">
+                <label for="wifi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="hotel" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="motel" name="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="appartment" name="appartment" checked>
+                <label for="appartment">Аппартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(р):</legend>
+            <input type="text" name="price" placeholder="от 0">
+            <input type="text" name="price" placeholder="до 3000">
+            <div class="common-line">
+              <span class="painted-line"></span>
+              <button class="button"></button>
+              <button class="button"></button>
+            </div>
+            <button type="submit">Показать</button>
+          </fieldset>
+        </form>
+      </section>
       <div class="sorting">
         <h3>Найдено:3</h3>
         <span>Сортировка:</span>
