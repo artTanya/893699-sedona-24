@@ -43,6 +43,22 @@ a {
 .advice-list {
   list-style:none;
 }
+
+.advice-icon-house {
+  background-image: url("../img/icon-house.svg");
+  width: 75px;
+  height: 72px;
+}
+.advice-icon-food {
+  background-image: url("../img/icon-food.svg");
+  width:75px;
+  height:70px;
+}
+.advice-icon-gift {
+  background-image: url("../img/icon-gift.svg");
+  width: 64px;
+  height: 77px;
+}
 .feature-title {
   font-size: 21px;
   font-weight: 700;
@@ -107,8 +123,7 @@ a {
   width: 115px;
   height: 41px;
   background-image: url("../img/logo-htmlacademy-black.svg");
-  background-position:center;
-  outline: 2px solid red;
+  background-position: center;
 }
 .academy-logo:hover {
   background-image: url("../img/logo-htmlacademy-blue.svg");
@@ -117,9 +132,50 @@ a {
   background-image: url("../img/logo-htmlacademy-gray.svg");
 
 }
-.catalog-item h3 {
-  font-size:21px;
-  line-height: 26px;
-  color:#000000;
+.social-button {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-button.twitter {
+  background-image: url("../img/twitter.svg");
+}
+.social-button.facebook {
+  background-image: url("../img/fb-icon.svg")
+}
 
+.social-button.youtube {
+  background-image: url("../img/youtube.svg")
+}
+
+.visually-hidden {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.button {
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.button.button-brown {
+  background-color: #766357;
+}
+
+.button.button-blue {
+  background-color: #81b3d2;
 }
