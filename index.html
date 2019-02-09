@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,10 +29,10 @@
       </section>
 
       <section class="features">
-        <h3>Седона — небольшой городок в Аризоне, заслуживающий большего</h3>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h3 class="feature-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p class="feature-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features-list">
-          <li class="feature">
+          <li class="feature feature-blue">
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -49,7 +52,7 @@
             </ul>
           </li>
 
-          <li class="feature">
+          <li class="feature feature-blue">
             <h3>Там есть мост дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -76,8 +79,8 @@
       </section>
 
       <section class="administration">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h2 class="administration-title">Заинтересовались?</h2>
+        <p class="administration-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <img src="img/map.jpg" width="1718" height="748" alt="Карта">
         <button class="searching" type="submit">Поиск гостиницы в Седоне</button>
         <form class="search-hotel" action="https://echo.htmlacademy.ru/" method="post">
@@ -111,9 +114,9 @@
       </ul>
 
       <address>
-        <span>Website by</span>
+        <span class="footer-copyright">Website by</span>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </address>
 
