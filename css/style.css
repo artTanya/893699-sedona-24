@@ -129,6 +129,7 @@ a {
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .button-search.button-search-brown {
   width: 568px;
@@ -249,6 +250,14 @@ a {
 .catalog-item-price {
   color: #333333;
 }
+.rating {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  color: #666666;
+  background-color: #f2f2f2;
+
+}
 .sorting-list {
   list-style: none;
 }
@@ -258,10 +267,17 @@ a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
+.sorting-item:hover {
+  color: #81b3d2;
+}
+.sorting-item:active {
+  color: #000000;
+}
 .sorting-item.sorting-item-selected {
   color: #81b3d2;
   border-bottom: none;
 }
+
 
 .button {
   display: inline-block;
