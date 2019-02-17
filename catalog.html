@@ -25,7 +25,7 @@
     <main class="container">
       <section class="options">
         <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
+          <fieldset class="filter-infrastructure">
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
@@ -42,7 +42,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-living">
             <legend>Тип жилья:</legend>
             <ul>
               <li>
@@ -59,7 +59,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-cost">
             <legend>Стоимость в сутки(р):</legend>
             <input type="text" name="price" placeholder="от 0">
             <input type="text" name="price" placeholder="до 3000">
@@ -80,8 +80,10 @@
           <li><a class="sorting-item" href="#">По типу</a></li>
           <li><a class="sorting-item" href="#">По рейтингу</a></li>
         </ul>
-        <a href="#"><span class="visually-hidden">По возрастанию</span></a>
-        <a href="#"><span class="visually-hidden">По убыванию</span></a>
+        <div class="amount-sorting">
+          <a href="#"><span class="visually-hidden">По возрастанию</span></a>
+          <a href="#"><span class="visually-hidden">По убыванию</span></a>
+        </div>
        </div>
 
       <section class="catalog">
@@ -167,8 +169,8 @@
         <li><a class="social-button youtube" href="#"><span class="visually-hidden">Ютюб</span></a></li>
       </ul>
 
-      <address>
-        <span class="footer-copyright">Website by</span>
+      <address class="footer-copyright">
+        <span class="footer-text">Website by</span>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Academy</span>
         </a>

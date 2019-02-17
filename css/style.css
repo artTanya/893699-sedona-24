@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding:0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -14,8 +13,13 @@ a {
   text-decoration: none;
 }
 
-.navigation  {
-  list-style:none;
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation a {
@@ -33,6 +37,11 @@ a {
 .navigation a:hover {
   color: #81b3d2;
 }
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 70px);
+}
 .navigation a:active,
 .navigation a:focus {
   color:rgba(0, 0, 0, 0.3);
@@ -43,11 +52,14 @@ a {
 }
 .features-list,
 .advice-list {
-  list-style:none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-
- /* .advice-icon-house {
+/* .advice-icon-house {
   background-image: url("../img/icon-house.svg");
   width: 75px;
   height: 72px;
@@ -67,13 +79,13 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  background-color: inherit;
 }
 .feature-text {
   line-height: 26px;
   text-align: center;
 }
 .feature {
+  width: 33.3%;
   text-align: center;
   background-color: #eeeeee;
 }
@@ -84,10 +96,14 @@ a {
 }
 
 .feature-blue {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   color: #ffffff;
   background-color: #81b3d2;
 }
 .advice-list {
+  min-width: 100%;
   background-color: #ffffff;
 }
 .advice-list p {
@@ -96,6 +112,10 @@ a {
 .advice-list h3 {
   color: #333333;
 }
+.advice-item {
+  width: 33.3%;
+}
+
 .administration-title {
   font-size: 30px;
   line-height: 36px;
@@ -106,7 +126,26 @@ a {
   line-height: 24px;
   text-align: center;
 }
-
+.map {
+  position: relative;
+}
+.map img {
+  display: block;
+}
+.search-hotel {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 568px;
+  padding: 55px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.search-hotel p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .search-hotel label,
 .search-hotel input::placeholder {
   font-weight: 700;
@@ -124,14 +163,19 @@ a {
 }
 
 .button-search {
-  display:inline-block;
+  display: inline-block;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   text-transform: uppercase;
+  border:none;
 }
 .button-search.button-search-brown {
+  display: block;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -144,8 +188,9 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 .button-search.button-search-blue {
-  width: 458px;
+  width: 100%;
   height: 58px;
+  margin-top:  24px;
   background-color: #81b3d2;
   background-position: center;
 }
@@ -157,17 +202,44 @@ a {
   background-color: #5496bd;
 }
 
+.main-footer {
+  display: flex;
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+   width: 33.3%;
 
+}
 .footer-social li {
   list-style: none;
+  margin-right: 6px;
+}
+.footer-social li:last-child {
+  margin-right: 0;
 }
 .footer-hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  background-color: inherit;
 }
 .footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+}
+.footer-text {
+  margin-right: 8px;
   font-style: normal;
   line-height: 26px;
 }
@@ -234,6 +306,9 @@ a {
 .catalog-list {
   list-style:none;
 }
+.catalog-item {
+  display: flex;
+}
 .catalog-item h3 {
   font-size: 21px;
   line-height: 26px;
@@ -250,6 +325,9 @@ a {
 .catalog-item-price {
   color: #333333;
 }
+.catalog-item-rating {
+  margin-left: auto;
+}
 .rating {
   display: inline-block;
   width: 110px;
@@ -258,9 +336,14 @@ a {
   background-color: #f2f2f2;
 
 }
+.sorting {
+  display: flex;
+}
 .sorting-list {
+  display: flex;
   list-style: none;
 }
+
 .sorting-item {
   font-size: 12px;
   line-height: 18px;
@@ -272,10 +355,14 @@ a {
 }
 .sorting-item:active {
   color: #000000;
+  border-bottom: none;
 }
 .sorting-item.sorting-item-selected {
   color: #81b3d2;
   border-bottom: none;
+}
+.amount-sorting {
+  margin-left: auto;
 }
 
 
@@ -309,4 +396,10 @@ a {
 .button.button-blue:active,
 .button.button-blue:focus {
   color: rgba(255, 255, 255, 0.3)
+}
+.filters {
+  display: flex;
+}
+.filter-cost {
+  margin-left: auto;
 }

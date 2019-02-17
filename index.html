@@ -40,7 +40,7 @@
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="feature-image">
-              <img src="img/background-photo-1.jpg" alt="Город">
+              <img src="img/background-photo-1.jpg" width="800" height="256" alt="Город">
             </div>
             <ul class="advice-list">
               <li class="advice-item">
@@ -62,13 +62,13 @@
           </li>
 
           <li class="feature feature-blue">
+            <div class="feature-image">
+              <img src="img/background-photo-2.jpg" width="800" height="256" alt="Мост">
+            </div>
             <div class="feature-content">
               <h3>Там есть мост дьявола</h3>
               <p>-№2-</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-            <div class="feature-image">
-              <img src="img/background-photo-2.jpg" alt="Мост">
             </div>
           </li>
 
@@ -101,9 +101,9 @@
       <section class="administration">
         <h2 class="administration-title">Заинтересовались?</h2>
         <p class="administration-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <img src="img/map.jpg" width="1718" height="748" alt="Карта">
         <button class="button-search button-search-brown" type="submit">Поиск гостиницы в Седоне</button>
-        <form class="search-hotel" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="map">
+          <form class="search-hotel" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label for="arrival">Дата заезда:</label>
             <input type="text" id="arrival" name="arrival" placeholder="24 апреля 2017">
@@ -120,6 +120,8 @@
           </p>
           <button class="button-search button-search-blue" type="submit">Найти</button>
         </form>
+          <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+        </div>
       </section>
 
     </main>
@@ -133,8 +135,8 @@
         <li><a class="social-button youtube" href="#"><span class="visually-hidden">Ютюб</span></a></li>
       </ul>
 
-      <address>
-        <span class="footer-copyright">Website by</span>
+      <address class="footer-copyright">
+        <span class="footer-text">Website by</span>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Academy</span>
         </a>
