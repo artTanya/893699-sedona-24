@@ -9,12 +9,19 @@ body {
   text-transform: uppercase;
   background-color: #ffffff;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 a {
   text-decoration: none;
 }
 
 .navigation {
   position: relative;
+  width:100%;
   display: flex;
   justify-content: space-around;
   margin: 0;
@@ -23,7 +30,10 @@ a {
 }
 
 .navigation a {
+  display: flex;
+  align-items: center;
   line-height: 26px;
+  min-height: 56px;
   font-weight: 700;
   list-style: none;
   color: #000000;
@@ -41,15 +51,34 @@ a {
   position: absolute;
   top: 0;
   left: calc(50% - 70px);
+  z-index: 1;
 }
 .navigation a:active,
 .navigation a:focus {
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .intro {
+  position: relative;
   background-image: url("../img/background-intro.jpg");
   background-repeat: no-repeat;
+  height: 511px;
 }
+
+.intro::after {
+  content: "";
+  position: absolute;
+  left:0;
+  right:0;
+  bottom: -3px;
+  height: 59px;
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+}
+.intro img {
+  display: block;
+  margin: 76px auto 0;
+}
+
 .features-list,
 .advice-list {
   list-style: none;
@@ -59,30 +88,60 @@ a {
   padding: 0;
 }
 
-/* .advice-icon-house {
+.advice-list .advice-item h3 {
+  padding-top: 164px;
+
+}
+.advice-item {
+  padding-bottom: 87px;
+}
+.advice-item p {
+  margin-bottom: 0;
+}
+.advice-icon {
+  position: relative;
+}
+.advice-icon::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+}
+.advice-icon-house::before {
+  top: 60px;
   background-image: url("../img/icon-house.svg");
   width: 75px;
   height: 72px;
 }
-.advice-icon-food {
+.advice-icon-food::before {
+  top: 60px;
   background-image: url("../img/icon-food.svg");
-  width:75px;
-  height:70px;
+  width: 74px;
+  height: 70px;
 }
-.advice-icon-gift {
+.advice-icon-gift::before {
+  top: 56px;
   background-image: url("../img/icon-gift.svg");
   width: 64px;
-  height: 77px;
-} */
+  height: 76px;
+}
+
 .feature-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
 }
+.feature-title h3 {
+  margin-top: 65px;
+}
+
 .feature-text {
   line-height: 26px;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 56px;
 }
 .feature {
   width: 33.3%;
@@ -90,6 +149,8 @@ a {
   background-color: #eeeeee;
 }
 .feature h3 {
+  margin-top: 0;
+  margin-bottom: 29px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -102,6 +163,30 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
 }
+.feature-blue .feature-content {
+  width: 33.33%;
+}
+.feature-image {
+  width: 66.67%;
+}
+.feature-content {
+  min-height: 256px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+.feature-content p {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.feature-content h3 {
+  margin-bottom: 32px;
+}
+.feature-image img {
+  display: block;
+}
+
 .advice-list {
   min-width: 100%;
   background-color: #ffffff;
@@ -120,11 +205,14 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  background-color: inherit;
+  margin-top: 57px;
+  margin-bottom: 38px;
 }
 .administration-text {
   line-height: 24px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 .map {
   position: relative;
@@ -142,24 +230,101 @@ a {
   background-color: #ffffff;
   box-sizing: border-box;
 }
-.search-hotel p {
+.search-hotel .input-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 30px;
 }
 .search-hotel label,
 .search-hotel input::placeholder {
   font-weight: 700;
-  line-height: 26px;
+  line-height: 16px;
   color: #000000;
 }
+
 .search-hotel input {
   background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  outline: none;
 }
 .search-hotel input:hover {
   background-color: #ebebeb;
+  border: 1px solid #ebebeb;
 }
 .search-hotel input:focus {
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
+}
+.date-field {
+  width: 346px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  box-sizing: border-box;
+  background-image: url(../img/calendar-normal.svg);
+  background-repeat: no-repeat;
+  background-position: 317px center;
+}
+.date-field:hover {
+  background-image: url(../img/calendar-hover.svg);
+}
+.date-field:active {
+  background-image: url(../img/calendar-active.svg);
+}
+
+
+.number-field {
+  position: relative;
+  width: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+}
+.button-minus,
+.button-plus {
+  position: relative;
+  width: 38px;
+  font-size: 0;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.button-minus::before {
+  position: absolute;
+  left: 13px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+.button-plus::before,
+.button-plus::after {
+  position: absolute;
+  right: 14px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.button-plus::after {
+  transform: rotate(90deg);
+}
+.button-plus:hover:before,
+.button-plus:hover:after,
+.button-minus:hover:before {
+  background-color: #000000;
+}
+.button-plus:active:before,
+.button-plus:active:after,
+.button-minus:active:before {
+  background-color: #81b3d2;
 }
 
 .button-search {
@@ -204,7 +369,6 @@ a {
 
 .main-footer {
   display: flex;
-  width: 100%;
   padding-top: 36px;
   padding-bottom: 36px;
 }

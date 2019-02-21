@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigator">
         <a class="main-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
@@ -25,7 +25,7 @@
     <main class="container">
       <section class="intro">
         <h1 class="visually-hidden">Sedona</h1>
-        <img src="img/welcome.png" width="1200" height="800" alt="Седона.Добро пожаловать">
+        <img src="img/welcome.png" width="458" height="352" alt="Седона.Добро пожаловать">
       </section>
 
       <section class="features">
@@ -104,29 +104,38 @@
         <button class="button-search button-search-brown" type="submit">Поиск гостиницы в Седоне</button>
         <div class="map">
           <form class="search-hotel" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
+          <div class="input-line">
             <label for="arrival">Дата заезда:</label>
-            <input type="text" id="arrival" name="arrival" placeholder="24 апреля 2017">
-          </p>
-          <p>
+            <input class="date-field" type="text" id="arrival" name="arrival" placeholder="24 апреля 2017">
+          </div>
+          <div class="input-line">
             <label for="departure">Дата выезда:</label>
-            <input type="text" id="departure" name="departure" placeholder="4 июля 2017">
-          </p>
-          <p>
+            <input class="date-field" type="text" id="departure" name="departure" placeholder="4 июля 2017">
+          </div>
+          <div class="input-line">
             <label for="adults-amount">Взрослые:</label>
-            <input type="number" id="adults-amount" name="adults-amount" placeholder="2">
+            <div class="wrapper">
+              <button class="button-minus"></button>
+              <input class="number-field" type="text" id="adults-amount" name="adults-amount" placeholder="2">
+              <button class="button-plus"></button>
+            </div>
+
             <label for="children-amount">Дети:</label>
-            <input type="number" id="children-amount" name="children-amount" placeholder="0">
-          </p>
+            <div class="wrapper">
+              <button class="button-minus"></button>
+              <input class="number-field" type="text" id="children-amount" name="children-amount" placeholder="0">
+              <button class="button-plus"></button>
+            </div>
+          </div>
           <button class="button-search button-search-blue" type="submit">Найти</button>
         </form>
-          <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+          <img src="img/map.jpg" alt="Карта">
         </div>
       </section>
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <p class="footer-hashtag">#visitsedona</p>
 
       <ul class="footer-social">
