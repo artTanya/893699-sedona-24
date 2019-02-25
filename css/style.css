@@ -487,6 +487,7 @@ a {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   height: 217px;
+  background-position: 50%;
 }
 
 .filters {
@@ -509,7 +510,7 @@ a {
 .options label {
   display: block;
   margin-bottom: 23px;
-  padding-left: 17px
+  padding-left: 30px;
 }
 .filter-input-checkbox {
   position: absolute;
@@ -521,9 +522,10 @@ a {
   position: absolute;
   width: 23px;
   height: 23px;
-  margin-left: -17px;
+  margin-left: -30px;
   background-image: url("../img/checkbox-off.svg");
 }
+
 .filter-input-checkbox:checked + .check-box {
   background-image: url("../img/checkbox-on.svg");
   width: 27px;
@@ -532,21 +534,21 @@ a {
 
 .filter-input-checkbox:checked:focus + .check-box {
   background-image: url("../img/checkbox-on.svg");
-  border: 1px solid tomato;
-
+  outline: 2px solid rgb(77, 144, 254);
 }
+
 .filter-input-checkbox:focus + .check-box {
   background-image: url("../img/checkbox-off.svg");
-  border: 1px solid tomato;
+  outline: 2px solid rgb(77, 144, 254);
 }
-/* .filter-input-checkbox:checked:focus + .check-box {
-  background-image: url("../img/checkbox-on.svg");
 
-} */
-
- /* .filter-input-checkbox:disabled + .check-box {
+.filter-input-checkbox:disabled + .check-box {
   background-image: url("../img/checkbox-off-disabled.svg");
-} */
+}
+
+.filter-input-checkbox:checked:disabled + .check-box {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
 /* .filter-input-checkbox:hover + .check-box {
   background-image: url("../img/checkbox-off.svg");
 } */
@@ -592,8 +594,11 @@ a {
   height: 27px;
   color: #666666;
   background-color: #f2f2f2;
-
 }
+/* .stars {
+  background-image: url("../img/star.svg");
+} */
+
 .sorting {
   display: flex;
 }
