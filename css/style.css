@@ -594,10 +594,14 @@ a {
   height: 27px;
   color: #666666;
   background-color: #f2f2f2;
+  margin-bottom:47px;
 }
-/* .stars {
+.star {
   background-image: url("../img/star.svg");
-} */
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+}
 
 .sorting {
   display: flex;
