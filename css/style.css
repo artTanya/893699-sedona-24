@@ -639,8 +639,11 @@ a {
   padding-right: 73px;
   align-items: center;
   min-height: 86px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .sorting h3 {
+  font-size: 21px;
+  line-height: 26px;
   margin-right: 49px;
 }
 
@@ -676,6 +679,7 @@ a {
   margin-left: auto;
 }
 .triangle-up {
+  margin-right: 12px;
   display: inline-block;
   background-image: url("../img/icon-up.svg");
   width: 11px;
