@@ -96,16 +96,9 @@ a {
   width: 33.3%;
   box-sizing: border-box;
   padding-bottom: 87px;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-left: 50px;
+  padding-right: 50px;
   position: relative;
-}
-.advice-item.advice-item-food {
-  padding-left: 58px;
-  padding-right: 58px;
-}
-.advice-item.advice-item-gift {
-  padding-left: 64px;
 }
 
 .advice-item p {
@@ -563,7 +556,6 @@ a {
   margin-top: 31px;
   margin-bottom: 31px;
   padding: 0;
-  margin-bottom: 36px;
   border: none;
 }
 
@@ -682,6 +674,34 @@ a {
 }
 .amount-sorting {
   margin-left: auto;
+}
+.triangle-up {
+  display: inline-block;
+  background-image: url("../img/icon-up.svg");
+  width: 11px;
+  height: 10px;
+}
+
+.triangle-up:hover {
+  background-image: url("../img/icon-up-black.svg");
+}
+
+.triangle-up:active {
+  background-image: url("../img/icon-up-blue.svg");
+}
+
+.triangle-down {
+  display: inline-block;
+  background-image: url("../img/icon-down.svg");
+  width: 11px;
+  height: 10px;
+}
+.triangle-down:hover {
+  background-image: url("../img/icon-down-black.svg");
+}
+
+.triangle-down:active {
+  background-image: url("../img/icon-down-blue.svg");
 }
 
 .button {
