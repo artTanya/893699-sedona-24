@@ -419,8 +419,9 @@ a {
 .footer-social {
   display: flex;
   justify-content: center;
+  padding: 0;
   margin: 0;
-   width: 33.3%;
+  width: 33.3%;
 
 }
 .footer-social li {
@@ -618,6 +619,7 @@ a {
   padding-left: 73px;
   padding-right: 73px;
   list-style: none;
+  border-bottom: 1px solid #e5e5e5;
 
 }
 
@@ -632,7 +634,6 @@ a {
 .catalog-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item h3 {
