@@ -445,7 +445,6 @@ a {
 .footer-copyright {
   display: flex;
   justify-content: center;
-  padding: 0;
   align-items: center;
   width: 33.3%;
 }
@@ -528,7 +527,7 @@ a {
   color: #ffffff;
 }
 .filters legend {
-  margin-bottom:  32px;
+  margin-bottom:  25px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -543,7 +542,7 @@ a {
 .options label {
   display: block;
   margin-bottom: 23px;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 .filter-input-checkbox {
   position: absolute;
@@ -555,7 +554,7 @@ a {
   position: absolute;
   width: 23px;
   height: 23px;
-  margin-left: -30px;
+  margin-left: -40px;
   background-image: url("../img/checkbox-off.svg");
 }
 
@@ -604,23 +603,11 @@ a {
   margin-left: 30px;
 
 }
-.catalog-item-image,
-.catalog-item-info,
-.catalog-item-rating {
-  min-height: 150px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  box-sizing: border-box;
-
-}
 
 .catalog-list {
-  margin-bottom: 0;
-  padding-left: 73px;
-  padding-right: 73px;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  border-bottom: 1px solid #e5e5e5;
-
 }
 
 .catalog-item-info a {
@@ -634,6 +621,11 @@ a {
 .catalog-item {
   display: flex;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 73px;
+  padding-right: 73px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item h3 {
@@ -660,12 +652,16 @@ a {
 }
 
 .catalog-item-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
+  text-align: right;
 }
 
 .rating {
   margin:0;
-  margin-top: 46px;
+  margin-top: 42px;
   width: 110px;
   height: 27px;
   color: #666666;
@@ -674,8 +670,10 @@ a {
 }
 
 .star {
-  background-image: url("../img/star.svg");
   display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
   width: 18px;
   height: 17px;
 }
@@ -763,6 +761,10 @@ a {
   padding-right: 16px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.catalog-item .button {
+  margin-top: 15px;
 }
 
 .button.button-brown {
