@@ -19,10 +19,7 @@ body {
 a {
   text-decoration: none;
 }
-.main-navigator {
-  /* padding-left: 72px; */
-  /* padding-right: 72px; */
-}
+
 .navigation {
   position: relative;
   width:100%;
@@ -37,6 +34,10 @@ a {
   flex-grow: 1;
   flex-basis: 0;
   justify-content: center;
+}
+
+.hotels {
+  margin-left: 13px;
 }
 .trasparent {
   width: 244px;
@@ -144,14 +145,14 @@ a {
   height: 76px;
 }
 
-.feature-title {
+.introduction-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
 }
 
-.feature-title h3 {
+.introduction-title h3 {
   margin-top: 0;
   margin-bottom:0;
 
@@ -161,17 +162,19 @@ a {
   padding-bottom: 50px;
 }
 
-.feature-text {
+.introduction-text {
   margin: 0;
   margin-top: 26px;
   line-height: 26px;
   text-align: center;
 }
+
 .feature {
   width: 33.3%;
   text-align: center;
   background-color: #eeeeee;
 }
+
 .feature h3 {
   margin-top: 0;
   margin-bottom: 29px;
@@ -201,9 +204,19 @@ a {
   box-sizing: border-box;
 }
 .feature-content p {
-  margin-top: 21px;
   margin-bottom: 0;
   margin-left:-2px;
+}
+.feature-content .feature-text {
+  margin-top: -4px;
+}
+.feature-content .feature-text {
+  margin-top: 18px;
+  margin-left: 3px;
+}
+.feature-content .feature-desc  {
+  margin-top: 18px;
+  margin-left: 4px;
 }
 .feature-content h3 {
   margin-bottom: 25px;
@@ -597,41 +610,36 @@ a {
   margin-left: auto;
 }
 
-.catalog-item-info {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 30px;
-
-}
-
 .catalog-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.catalog-item-info a {
-  flex-basis: 100%;
-}
 .catalog-item-info {
-  margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 30px;
 }
 
 .catalog-item {
   display: flex;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 73px;
   padding-right: 73px;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.catalog-item img {
+  display: block;
+}
+
 .catalog-item h3 {
   margin: 0;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   color: #000000;
 }
 
@@ -648,9 +656,12 @@ a {
 .catalog-item-price {
   display: flex;
   flex-direction: column;
+  margin: 0;
   color: #333333;
 }
-
+.bottom-line {
+  display: flex;
+}
 .catalog-item-rating {
   display: flex;
   flex-direction: column;
@@ -661,9 +672,9 @@ a {
 
 .rating {
   margin:0;
-  margin-top: 42px;
   width: 110px;
   height: 27px;
+  line-height: 27px;
   color: #666666;
   background-color: #f2f2f2;
   text-align: center;
@@ -750,6 +761,9 @@ a {
 }
 
 .triangle-down:active {
+  background-image: url("../img/icon-down-blue.svg");
+}
+.current {
   background-image: url("../img/icon-down-blue.svg");
 }
 
