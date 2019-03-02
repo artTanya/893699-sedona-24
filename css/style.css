@@ -42,6 +42,7 @@ a {
 .trasparent {
   width: 244px;
 }
+
 .navigation a {
   display: flex;
   align-items: center;
@@ -60,12 +61,14 @@ a {
 .navigation a:hover {
   color: #81b3d2;
 }
+
 .main-logo {
   position: absolute;
   top: 0;
   left: calc(50% - 70px);
   z-index: 1;
 }
+
 .navigation a:active,
 .navigation a:focus {
   color: rgba(0, 0, 0, 0.3);
