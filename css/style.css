@@ -607,7 +607,20 @@ a {
 }
 
 .filter-cost {
+  width: 330px;
   margin-left: auto;
+}
+.filter-cost-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.cost-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
 .catalog-list {
@@ -756,13 +769,7 @@ a {
   width: 11px;
   height: 10px;
 }
-.triangle-down:hover {
-  background-image: url("../img/icon-down-black.svg");
-}
 
-.triangle-down:active {
-  background-image: url("../img/icon-down-blue.svg");
-}
 .current {
   background-image: url("../img/icon-down-blue.svg");
 }
