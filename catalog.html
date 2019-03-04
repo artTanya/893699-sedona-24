@@ -73,25 +73,25 @@
               </li>
             </ul>
           </fieldset>
-          <div class="filter-cost">
-            <div class="filter-cost-title">Стоимость в сутки(р):</div>
-            <div class="price-panel">
+          <fieldset class="filter-cost">
+            <legend  class="filter-cost-title">Стоимость в сутки(р):</legend>
+            <div class="price-controls">
               <label class="min-price">от
-                <input type="text" name="min-price" placeholder="от 0">
+                <input type="text" name="min-price" value="0">
               </label>
               <label class="max-price">до
-                <input type="text" name="max-price" placeholder="до 3000">
+                <input type="text" name="max-price" value="3000">
               </label>
             </div>
-            <div class="cost-controls">
+            <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="panel-toggle panel-toggle-min"></div>
-              <div class="panel-toggle panel-toggle-max"></div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <button class="btn-transparent" type="submit">Показать</button>
-          </div>
+          </fieldset>
 
         </form>
       </section>
