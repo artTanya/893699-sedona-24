@@ -333,6 +333,7 @@ a {
   border: 2px solid #e5e5e5;
 }
 .date-field {
+  position: relative;
   width: 346px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -594,6 +595,7 @@ a {
   .filter-input-checkbox {
     display:none;
   }
+
 }
 .check-box {
   position: absolute;
