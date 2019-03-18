@@ -88,6 +88,7 @@ a {
   height: 508px;
 
   background-image: url("../img/background-intro.jpg");
+  background-color: #8cb1d1;
   background-repeat: no-repeat;
   background-position: center -57px;
 }
@@ -129,7 +130,7 @@ a {
   padding-bottom: 81px;
   padding-left: 50px;
 }
-.advice-list .advice-item h3 {
+.advice-item .advice-heading {
   margin-bottom: 24px;
 }
 
@@ -204,7 +205,7 @@ a {
 
 .feature h3 {
   margin-top: 0;
-  margin-bottom: 29px;
+
 
   font-weight: 700;
   font-size: 21px;
@@ -430,6 +431,10 @@ a {
   padding-bottom: 4px;
 
   text-align: center;
+}
+.children-amount-text {
+  position:relative;
+  left: 12px;
 }
 .wrapper {
   display: flex;
@@ -787,6 +792,10 @@ a {
 .price-controls .max-price {
   width: 90px;
   padding-left: 67px;
+}
+.price-controls .max-price {
+  position: relative;
+  right: 10px;
 }
 .price-controls input {
   width: 50px;
