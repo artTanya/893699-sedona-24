@@ -26,6 +26,7 @@ a {
 }
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   min-height: 56px;
@@ -41,6 +42,7 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 56px;
+  max-width: 20%;
 }
 
 .hotels {
@@ -173,8 +175,8 @@ a {
 }
 
 .introduction-title {
-  width: 500px;
-  padding-left: 350px;
+  max-width: 600px;
+  margin: 23px auto;
 
   font-weight: 700;
   font-size: 21px;
@@ -367,6 +369,7 @@ a {
 
 .search-hotel input::placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 .serch-hotel label {
@@ -498,7 +501,7 @@ a {
 .button-search.button-search-brown {
   display: block;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   margin-top: 55px;
   margin-right: auto;
   margin-left: auto;
