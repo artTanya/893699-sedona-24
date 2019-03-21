@@ -1,14 +1,15 @@
 var button = document.querySelector (".button-search-brown");
 var form = document.querySelector ("form");
+var close = document.querySelector ("search-hotel-close")
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
-  form.classList.toggle("search-hotel-open");
+  form.classList.toggle("search-hotel-close");
 });
 window.addEventListener ("keydown", function(evt) {
  if (evt.keyCode === 27) {
-   if (form.classList.contains("search-hotel-open")) {
+   if (form.classList.contains("search-hotel-close")) {
      evt.preventDefault();
-     form.classList.remove("search-hotel-open");
+     form.classList.remove("search-hotel-close");
    }
  }
 });
