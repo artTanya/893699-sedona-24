@@ -74,6 +74,10 @@ a {
   color: #81b3d2;
 }
 
+.navigation .active {
+  color: #766357;
+}
+
 .main-logo {
   position: absolute;
   top: 0;
@@ -651,9 +655,7 @@ a {
 
   visibility: hidden;
 }
-.navigation .active {
-  color: #766357;
-}
+
 .options {
   height: 217px;
 
