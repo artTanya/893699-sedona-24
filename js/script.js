@@ -1,6 +1,5 @@
 var button = document.querySelector (".button-search-brown");
 var form = document.querySelector ("form");
-var close = document.querySelector ("search-hotel-close")
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
   form.classList.toggle("search-hotel-close");

@@ -36,22 +36,21 @@ a {
 
   list-style: none;
 }
+
 .navigation-item {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
   justify-content: center;
   align-items: center;
   min-height: 56px;
-  max-width: 20%;
+}
+.navigation-item:nth-child(2) {
+  margin-right: 20%;
 }
 
 .hotels {
   margin-left: 13px;
-}
-
-.trasparent {
-  width: 244px;
 }
 
 .navigation a {
@@ -320,20 +319,6 @@ a {
 
   background-color: #ffffff;
   transform: translateX(-50%);
-}
-@keyframes bounce {
-  0% {
-    transform: translate(-50%,-100px);
-  }
-  70% {
-    transform: translate(-50%, 40px);
-  }
-  90% {
-    transform: translate(-50%, -10px);
-  }
-  100% {
-    transform: translate(-50%, 0px);
-  }
 }
 
 .search-hotel-close {
