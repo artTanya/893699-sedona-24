@@ -1,14 +1,31 @@
 var button = document.querySelector (".button-search-brown");
-var form = document.querySelector ("form");
-button.addEventListener("click", function(evt) {
+var popup = document.querySelector ("form");
+var arrival = document.querySelector("[name=arrival]");
+var departure = document.querySelector("[name=departure]");
+
+
+button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  form.classList.toggle("search-hotel-close");
+  popup.classList.toggle("search-hotel-open");
+  popup.classList.remove("search-hotel-error");
+
 });
-window.addEventListener ("keydown", function(evt) {
+
+
+
+window.addEventListener ("keydown", function (evt) {
  if (evt.keyCode === 27) {
-   if (form.classList.contains("search-hotel-close")) {
+   if (popup.classList.contains("search-hotel-open")) {
      evt.preventDefault();
-     form.classList.remove("search-hotel-close");
+     popup.classList.remove("search-hotel-open");
    }
  }
 });
+popup.addEventListener("submit", function (evt) {
+   if (!arrival.value || !departure.value) {
+     evt.preventDefault();
+     popup.classList.remove("search-hotel-error");
+     popup.offsetWidth = popup.offsetWidth;
+     popup.classList.add("search-hotel-error");
+   }
+ });
